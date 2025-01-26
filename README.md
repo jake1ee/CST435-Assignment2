@@ -77,8 +77,8 @@ sudo dpkg -i ./containerd.io_<version>_<arch>.deb \
 #### To alternate between datasets, rename the file you want to use to "data.csv". For example:
 
 ```
- To use the smaller dataset, rename data-6758.csv to data.csv.
- To use the larger dataset, rename data-14598.csv to data.csv.
+ To use the smaller dataset, rename data-6758.csv to data.csv. And replace the original data.csv in the folder named "project" with the new data.csv.
+ To use the larger dataset, rename data-14598.csv to data.csv. And replace the original data.csv in the folder named "project" with the new data.csv.
 ```
 
 #### Ensure only the selected dataset is named "data.csv" when running the program.
