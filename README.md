@@ -219,7 +219,7 @@ sudo docker service ps  (id of workers & manager)
 sudo ./swarm.sh login 
 ```
 
-#### Establishes an SSH connection to the worker node with the IP addresses of the four nodes initialized previouslym (eg: 10.0.9.5, 10.0.9.6, 10.0.9.7, 10.0.9.8) 
+#### Establishes an SSH connection to the worker node with the IP addresses of the four nodes initialized previously (eg: 10.0.9.5, 10.0.9.6, 10.0.9.7, 10.0.9.8) 
 
 ```
 ssh 10.0.9.5 
