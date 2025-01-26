@@ -15,8 +15,7 @@ Lee Ter Qin  (159389)
 ### Prerequisites
 
 1. Docker
-2. WSL
-3. Dual Boot - for Linux distribution
+2. WSL / Dual Boot - for Linux distribution
 
 ### Clone the Project
 
