@@ -1,4 +1,4 @@
-# CST435 Assignment 2 - Distributed Hadoop cluster with Docker Swarm
+# CST435 Assignment 2 - Docker swarm for MPI
 
 ## Team Members
 
@@ -7,15 +7,16 @@ Angeline Teoh Qee  (159023)
 Tan Jun Jie  (158253)
 Then Tai Yu  (159152)
 Yeo Ying Sheng (157627)
-PLee Ter Qin  (159389)
+Lee Ter Qin  (159389)
 ```
 
 ## How to run this project
 
-### Software Installation needed
+### Prerequisites
 
 1. Docker
-2. Docker Swarm
+2. WSL
+3. Dual Boot - for Linux distribution
 
 ### Clone the Project
 
@@ -26,8 +27,6 @@ git clone https://github.com/jake1ee/CST435-Assignment2.git
 
 cd CST435-Assignment2
 ```
-
-### prerequisites
 
 #### Install Docker
 
