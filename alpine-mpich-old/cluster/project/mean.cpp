@@ -93,13 +93,7 @@ int main(int argc, char** argv)
 		std::vector<double> vecDataPerWorker(nDataRound);
 		MPI_Recv(&vecDataPerWorker[0], nDataRound, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		
-		std::for_each(vecDataPerWorker.begin(), vecDataPerWorker.end(), [](double& i)
-			{
-				for(int j = 0; j < 1000; j++)
-				{
-					i = sqrt(i);
-				}
-			});
+		
 		double sumDataPerWorker = std::accumulate(vecDataPerWorker.begin(), vecDataPerWorker.end(), 0.0);
 		MPI_Send(&sumDataPerWorker, 1, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
 	}

@@ -38,13 +38,7 @@ int main(int argc, char** argv)
 	getline(fData, data);
 
 	std::vector<double> vecData = getVecData(data, ",");
-	std::for_each(vecData.begin(), vecData.end(), [](double& i)
-			{
-				for(int j = 0; j < 1000; j++)
-				{
-					i = sqrt(i);
-				}
-			});
+	
 	double sumData = std::accumulate(vecData.begin(), vecData.end(), 0.0);
 	double meanData = sumData / vecData.size();
 	

@@ -77,8 +77,8 @@ sudo dpkg -i ./containerd.io_<version>_<arch>.deb \
 #### To alternate between datasets, rename the file you want to use to "data.csv". For example:
 
 ```
- To use the smaller dataset, rename data-6758.csv to data.csv.
- To use the larger dataset, rename data-14598.csv to data.csv.
+ To use the smaller dataset, rename data-6758.csv to data.csv. And replace the original data.csv in the folder named "project" with the new data.csv.
+ To use the larger dataset, rename data-14598.csv to data.csv. And replace the original data.csv in the folder named "project" with the new data.csv.
 ```
 
 #### Ensure only the selected dataset is named "data.csv" when running the program.
@@ -219,7 +219,7 @@ sudo docker service ps  (id of workers & manager)
 sudo ./swarm.sh login 
 ```
 
-#### Establishes an SSH connection to the worker node with the IP addresses of the four nodes initialized previouslym (eg: 10.0.9.5, 10.0.9.6, 10.0.9.7, 10.0.9.8) 
+#### Establishes an SSH connection to the worker node with the IP addresses of the four nodes initialized previously (eg: 10.0.9.5, 10.0.9.6, 10.0.9.7, 10.0.9.8) 
 
 ```
 ssh 10.0.9.5 
